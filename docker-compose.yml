@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  zhigamovsky_python_jupyter:
+    image: zhigamovsky_python_jupyter
+    build:
+      context: .
+      dockerfile: Dockerfile.zhigamovsky_python_jupyter
+    container_name: zhigamovsky_python_jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/app
+
